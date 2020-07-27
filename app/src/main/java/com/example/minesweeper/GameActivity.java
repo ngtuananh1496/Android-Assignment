@@ -29,9 +29,9 @@ import java.util.Timer;
 
 public class GameActivity extends AppCompatActivity {
 
-    private final int easyBombNumber = 10;
-    private final int mediumBombNumber = 28;
-    private final int expertBombNumber = 70;
+    private final int easyBombNumber = 12;
+    private final int mediumBombNumber = 50;
+    private final int expertBombNumber = 96;
     private int[] gameSize; //gameSize[0]: x, gameSize[1]: y, gameSize[2]: number of bombs
     private String gameMode = "";
     private ImageButton imageButton;
@@ -62,13 +62,13 @@ public class GameActivity extends AppCompatActivity {
             gameMode = bundle.getString("gameMode");
             switch (gameMode.trim()) {
                 case GameMode.EASY:
-                    gameSize = new int[]{9, 9, easyBombNumber};
+                    gameSize = new int[]{10, 10, easyBombNumber};
                     break;
                 case GameMode.MEDIUM:
-                    gameSize = new int[]{14, 14, mediumBombNumber};
+                    gameSize = new int[]{14, 20, mediumBombNumber};
                     break;
                 case GameMode.EXPERT:
-                    gameSize = new int[]{16, 20, expertBombNumber};
+                    gameSize = new int[]{16, 30, expertBombNumber};
                     break;
             }
         }
