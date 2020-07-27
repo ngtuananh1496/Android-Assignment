@@ -111,16 +111,6 @@ public class GameActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void onClickPinchZoom(View view){
-//        gameLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Animation zoomOut = AnimationUtils.loadAnimation(GameActivity.this, R.anim.zoom_out);
-//                gameLayout.startAnimation(zoomOut);
-//            }
-//        });
-//    }
-
     private void createGame() {
         for (int i = 0; i < gameSize[1]; i++) {
             LinearLayout linearLayout = new LinearLayout(GameActivity.this);
